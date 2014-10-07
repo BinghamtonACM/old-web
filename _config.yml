@@ -1,0 +1,8 @@
+highlighter: pygments
+github: [Repository metadata]
+timezone: America/New_York
+encoding: utf-8
+
+safe: true
+lsi: false
+source: .
