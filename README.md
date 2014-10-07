@@ -1,2 +1,2 @@
-buacm.github.io
+Binghamton ACM
 ===============
