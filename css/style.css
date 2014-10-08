@@ -3,4 +3,16 @@ html, body
     margin: 0;
     padding: 0;
     height: 100%;
+    width: 100%;
+}
+
+.page-wrap
+{
+    position: relative;
+    width: 100%;
+}
+
+#wrapper
+{
+    width: 100%;
 }
