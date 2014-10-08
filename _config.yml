@@ -1,6 +1,7 @@
 highlighter: pygments
 timezone: America/New_York
 encoding: utf-8
+title: Binghamton ACM
 
 safe: true
 lsi: false
