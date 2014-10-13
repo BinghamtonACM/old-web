@@ -16,3 +16,34 @@ html, body
 {
     width: 100%;
 }
+
+/* Custom Styles */
+
+/* ---------------
+	Navigation
+------------------*/
+
+nav#main-nav {
+	height: 60px;
+	padding: 0 20px;
+}
+
+nav#main-nav ul.title-area li.name h1,
+nav#main-nav ul.right li a {
+	line-height: 60px;
+}
+
+nav#main-nav ul.title-area li.name h1 a{
+	font-size: 24px;
+    font-family: 'Josefin Sans';
+    font-weight: 600;
+}
+
+nav#main-nav ul.right li a {
+	font-size: 16px;
+    font-family: 'Open Sans';
+}
+
+nav#main-nav ul.right li a:hover {
+    background-color: #0090C1;
+}
