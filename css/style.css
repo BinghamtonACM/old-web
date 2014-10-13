@@ -25,7 +25,7 @@ html, body
 
 nav#main-nav {
 	height: 60px;
-	padding: 0 20px;
+    padding: 0 20px;
 }
 
 nav#main-nav ul.title-area li.name h1,
@@ -46,4 +46,18 @@ nav#main-nav ul.right li a {
 
 nav#main-nav ul.right li a:hover {
     background-color: #0090C1;
+}
+
+nav#main-nav ul.dropdown li a{
+    font-size: 14px;
+    padding: 0 20px 0 15px;
+    text-align: center;
+}
+
+.top-bar-section .has-dropdown > a:after {
+    margin-top: 5px;
+}
+
+.top-bar-section .has-dropdown:hover > a:after {
+    border-color: rgba(255,255,255,1) transparent transparent transparent
 }
