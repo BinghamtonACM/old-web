@@ -63,7 +63,7 @@ nav#main-nav ul.dropdown li a{
 }
 
 /* --------------------
-    Front Div#Main
+    Front: Div#Main
 -----------------------*/
 
 body, html {
@@ -93,10 +93,10 @@ div#main.full-width::after {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url('../img/main.png');
+    background: url('../img/main.png') center center;
     width: 100%;
     height: 100%;
-    opacity : 0.1;
+    opacity : 0.2;
     z-index: 1;
 }
 
@@ -104,7 +104,37 @@ div#main h1.title {
     color: #fff;
     font-family: 'Josefin Sans';
     font-weight: 600;
-    font-size: 48px;
+    font-size: 72px;
     text-align: center;
     margin: 20px 0 0 0;
+}
+
+/* ------------------------
+    Front: ACM Components
+---------------------------*/
+
+ul#acm-components {
+    margin: 80px 0 0 0;
+}
+
+ul#acm-components li {
+    line-height: 0;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+}
+
+ul#acm-components li h2 {
+    color: #fff;
+    font-family: 'Josefin Sans';
+    font-weight: 600;
+    border-bottom: 4px ridge #fff;
+}
+
+ul#acm-components li p {
+    color: #fff;
+    font-family: 'Open Sans';
+    text-align: left;
+    font-size: 18px;
+    color: #fff;
 }
