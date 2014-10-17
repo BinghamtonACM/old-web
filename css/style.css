@@ -127,14 +127,14 @@ ul#acm-components li {
     line-height: 0;
     display: inline-block;
     padding: 20px 20px 10px 20px;
-    width: calc((100vw / 3) - 20px);
-    width: -o-calc((100vw / 3) - 20px); /* opera */
-    width: -webkit-calc((100vw / 3) - 20px); /* google, safari */
-    width: -moz-calc((100vw / 3) - 20px); /* firefox */
+    width: calc((100vw / 3) - 50px);
+    width: -o-calc((100vw / 3) - 50px); /* opera */
+    width: -webkit-calc((100vw / 3) - 50px); /* google, safari */
+    width: -moz-calc((100vw / 3) - 50px); /* firefox */
 }
 
 ul#acm-components li:first-child {
-    margin-left: 30px;
+    margin-left: 75px;
 }
 
 ul#acm-components li h2 {
