@@ -106,7 +106,8 @@ div#main h1.title {
     font-weight: 600;
     font-size: 72px;
     text-align: center;
-    margin: 20px 0 0 0;
+    margin: 30px 0 50px 0;
+    border-bottom: 4px ridge #fff;
 }
 
 /* ------------------------
@@ -114,14 +115,26 @@ div#main h1.title {
 ---------------------------*/
 
 ul#acm-components {
-    margin: 80px 0 0 0;
+    background-color: #000;
+    border-top: 4px ridge #fff;
+    border-bottom: 4px ridge #fff;
+    width: 100%;
+    text-align: center;
+    margin: 0;
 }
 
 ul#acm-components li {
     line-height: 0;
     display: inline-block;
-    padding: 10px;
-    text-align: center;
+    padding: 20px 20px 10px 20px;
+    width: calc((100vw / 3) - 20px);
+    width: -o-calc((100vw / 3) - 20px); /* opera */
+    width: -webkit-calc((100vw / 3) - 20px); /* google, safari */
+    width: -moz-calc((100vw / 3) - 20px); /* firefox */
+}
+
+ul#acm-components li:first-child {
+    margin-left: 30px;
 }
 
 ul#acm-components li h2 {
@@ -135,6 +148,6 @@ ul#acm-components li p {
     color: #fff;
     font-family: 'Open Sans';
     text-align: left;
-    font-size: 18px;
+    font-size: 20px;
     color: #fff;
 }
