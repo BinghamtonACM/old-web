@@ -19,9 +19,9 @@ html, body
 
 /* Custom Styles */
 
-/* ---------------
-	Navigation
-------------------*/
+/* ---------------------
+	Global: Navigation
+------------------------*/
 
 nav#main-nav {
 	height: 60px;
@@ -62,9 +62,9 @@ nav#main-nav ul.dropdown li a{
     border-color: rgba(255,255,255,1) transparent transparent transparent
 }
 
-/* --------------------
+/* ------------------
     Front: Div#Main
------------------------*/
+---------------------*/
 
 body, html {
   height: 100%;
@@ -150,4 +150,18 @@ ul#acm-components li p {
     text-align: left;
     font-size: 20px;
     color: #fff;
+}
+
+/* -------------------------------
+    Front: MailChimp Signup Form
+----------------------------------*/
+
+form#mailchimp-form {
+    font-family: 'Open Sans';
+}
+
+form#mailchimp-form input {
+    width: 200px;
+    display: inline-block;
+    font-size: 18px;
 }
