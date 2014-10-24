@@ -96,7 +96,7 @@ div#main.full-width::after {
     background: url('../img/main.png') center center;
     width: 100%;
     height: 100%;
-    opacity : 0.2;
+    opacity : 0.1;
     z-index: 1;
 }
 
