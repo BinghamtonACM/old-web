@@ -101,9 +101,9 @@ div#main h1.title {
     color: #fff;
     font-family: 'Josefin Sans';
     font-weight: 600;
-    font-size: 72px;
+    font-size: 64px;
     text-align: center;
-    margin: 30px 0 50px 0;
+    margin: 30px 0 40px 0;
     border-bottom: 4px ridge #fff;
 }
 
@@ -155,8 +155,8 @@ ul#acm-components li p {
 
 form#mailchimp-form {
     text-align: center;
-    margin-top: 25px;
-    z-index: 3;
+    margin-top: 20px;
+    padding: 0;
 }
 
 form#mailchimp-form h2 {
