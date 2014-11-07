@@ -188,7 +188,7 @@ form#mailchimp-form div {
     top: -30px;
 }
 
-.error-visible {
+.inputFeedback {
     top: 0!important;
     -webkit-transition: top 0.30s ease-in-out;
     -moz-transition: top 0.30s ease-in-out;
@@ -211,13 +211,13 @@ form#mailchimp-form input[type="email"] {
     padding: 0;
 }
 
-.verifiedEmail {
+.verifiedInput {
     background-color: #CCFFCC!important;
     border: 1px solid #1DA237!important;
     box-shadow: 0 0 10px #1DA237!important;
 }
 
-.unverifiedEmail {
+.unverifiedInput {
     background-color: #ffcccc!important;
     border: 1px solid #a2371d!important;
     box-shadow: 0 0 10px #a2371d!important;
@@ -237,4 +237,12 @@ form#mailchimp-form input[type="submit"] {
     padding: 0;
     vertical-align: middle;
     margin: -30px 0 0 0;
+}
+
+form#mailchimp-form input[type="submit"]:hover {
+    background-color: #1DA237;
+}
+
+form#mailchimp-form input[type="submit"]:disabled {
+    background-color: #6e6e6e;
 }
