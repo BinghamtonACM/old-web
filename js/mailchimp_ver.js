@@ -2,56 +2,52 @@
 	Signup Form - Verification Functions
 ------------------------------------------*/
 
-var emailCheck, fNameCheck, lNameCheck = false;
-
 $("#mce-EMAIL").on("focusout", function() {
     var email = this.value;
-    emailCheck = isValidEmailAddress(email);
-
-    if(email.length > 0 && emailCheck) {
-        $('#email-fdbk').text();                                    // Clear feedback
-        $("#mce-EMAIL ~ div").toggleClass("inputFeedback", false);  // Hide errors
-        $("#mce-EMAIL").toggleClass("unverifiedInput", false);      // Hide unverified (red) input styling
-        $("#mce-EMAIL").toggleClass("verifiedInput", true);         // Show verified (green) input styling
-    }
-    else {
-        $('#email-fdbk').text("Invalid email address");      // Feedback
-        $("#mce-EMAIL ~ div").toggleClass("inputFeedback", true);   // Show errors
-        $("#mce-EMAIL").toggleClass("verifiedInput", false);        // Hide verified (green) input styling
-        $("#mce-EMAIL").toggleClass("unverifiedInput", true);       // Show unverified (red) input styling
+    if(email.length > 0) {
+        if(isValidEmailAddress(email)) {
+            $('#email-fdbk').text();                                    // Clear feedback
+            $("#mce-EMAIL ~ div").toggleClass("inputFeedback", false);  // Hide errors
+            $("#mce-EMAIL").toggleClass("unverifiedInput", false);      // Hide unverified (red) input styling
+            $("#mce-EMAIL").toggleClass("verifiedInput", true);         // Show verified (green) input styling
+        }
+        else {
+            $('#email-fdbk').text("Invalid email address");             // Feedback
+            $("#mce-EMAIL ~ div").toggleClass("inputFeedback", true);   // Show errors
+            $("#mce-EMAIL").toggleClass("verifiedInput", false);        // Hide verified (green) input styling
+            $("#mce-EMAIL").toggleClass("unverifiedInput", true);       // Show unverified (red) input styling
+        }
     }
 });
 
 $("#mce-FNAME").on("focusout", function() {
-    fNameCheck = isValidName(this);
-    if(!fNameCheck) {
-        $('#fname-fdbk').text("First name required");        // Feedback
-        $("#mce-FNAME ~ div").toggleClass("inputFeedback", true);   // Show errors
-    }
-    else {
+    if(this.value.length > 0) {
         $('#fname-fdbk').text();                                    // Clear Feedback
         $("#mce-FNAME ~ div").toggleClass("inputFeedback", false);  // Hide errors
+        $("#mce-FNAME").toggleClass("unverifiedInput", false);      // Hide unverified (red) input styling
+        $("#mce-FNAME").toggleClass("verifiedInput", true);         // Show verified (green) input styling
+    }
+    else {
+        $('#fname-fdbk').text("First name required");               // Feedback
+        $("#mce-FNAME ~ div").toggleClass("inputFeedback", true);   // Show errors
+        $("#mce-FNAME").toggleClass("verifiedInput", false);        // Hide verified (green) input styling
+        $("#mce-FNAME").toggleClass("unverifiedInput", true);       // Show unverified (red) input styling
     }
 });
 
 $("#mce-LNAME").on("focusout", function() {
-    lNameCheck = isValidName(this);
-    if(!lNameCheck) {
-        $('#lname-fdbk').text("Last name required");        // Feedback
-        $("#mce-LNAME ~ div").toggleClass("inputFeedback", true);   // Show errors
-    }
-    else {
+    if(this.value.length > 0) {
         $('#lname-fdbk').text();                                    // Clear Feedback
         $("#mce-LNAME ~ div").toggleClass("inputFeedback", false);  // Hide errors
+        $("#mce-LNAME").toggleClass("unverifiedInput", false);      // Hide unverified (red) input styling
+        $("#mce-LNAME").toggleClass("verifiedInput", true);         // Show verified (green) input styling
     }
-});
-
-$("#signup-form").on("submit", function() {
-    if(emailCheck && fNameCheck && lNameCheck) {
-        return true;
+    else {
+        $('#lname-fdbk').text("Last name required");                // Feedback
+        $("#mce-LNAME ~ div").toggleClass("inputFeedback", true);   // Show errors
+        $("#mce-LNAME").toggleClass("verifiedInput", false);        // Hide verified (green) input styling
+        $("#mce-LNAME").toggleClass("unverifiedInput", true);       // Show unverified (red) input styling
     }
-    $("input").focusout();
-    return false;
 });
 
 function isValidEmailAddress(email) {

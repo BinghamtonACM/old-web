@@ -180,8 +180,9 @@ form#signup-form div {
     background-color: rgba(0, 0, 0, 0.5);
     width: inherit;
     height: 30px;
-    padding: 2px 0;
-    font-size: 18px;
+    padding: 3px 0;
+    font-size: 16px;
+    font-style: italic;
     color: #fff;
     position: relative;
     z-index: -1;
