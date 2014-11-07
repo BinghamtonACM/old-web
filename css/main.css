@@ -1,0 +1,67 @@
+/* ---------------------
+    Global: Setup
+------------------------*/
+
+
+html, body
+{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.page-wrap
+{
+    position: relative;
+    width: 100%;
+}
+
+#wrapper
+{
+    width: 100%;
+}
+
+/* ---------------------
+	Global: Navigation
+------------------------*/
+
+nav#main-nav {
+	height: 60px;
+    padding: 0 20px;
+}
+
+nav#main-nav ul.title-area li.name h1,
+nav#main-nav ul.right li a {
+	line-height: 60px;
+}
+
+nav#main-nav ul.title-area li.name h1 a{
+	font-size: 24px;
+    font-family: 'Josefin Sans';
+    font-weight: 600;
+}
+
+nav#main-nav ul.right li a {
+	font-size: 16px;
+    font-family: 'Open Sans';
+}
+
+nav#main-nav ul.right li a:hover {
+    background-color: #0090C1;
+}
+
+nav#main-nav ul.dropdown li a{
+    font-size: 14px;
+    padding: 0 20px 0 15px;
+    text-align: center;
+}
+
+.top-bar-section .has-dropdown > a:after {
+    margin-top: 5px;
+}
+
+.top-bar-section .has-dropdown:hover > a:after {
+    border-color: rgba(255,255,255,1) transparent transparent transparent
+}
+
