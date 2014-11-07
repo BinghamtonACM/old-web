@@ -2,7 +2,6 @@
 	Signup Form - Verification Functions
 ------------------------------------------*/
 
-// Criteria to successfully submit
 var emailCheck, fNameCheck, lNameCheck = false;
 
 $("#mce-EMAIL").on("focusout", function() {
@@ -10,29 +9,49 @@ $("#mce-EMAIL").on("focusout", function() {
     emailCheck = isValidEmailAddress(email);
 
     if(email.length > 0 && emailCheck) {
-        $('#email-fdbk').text("Valid email address!");              // Feedback
+        $('#email-fdbk').text();                                    // Clear feedback
         $("#mce-EMAIL ~ div").toggleClass("inputFeedback", false);  // Hide errors
         $("#mce-EMAIL").toggleClass("unverifiedInput", false);      // Hide unverified (red) input styling
         $("#mce-EMAIL").toggleClass("verifiedInput", true);         // Show verified (green) input styling
     }
     else {
-        $('#email-fdbk').text("Error: Invalid email address");      // Feedback
-        $("#mce-EMAIL").toggleClass("inputFeedback", true);         // Show errors
+        $('#email-fdbk').text("Invalid email address");      // Feedback
+        $("#mce-EMAIL ~ div").toggleClass("inputFeedback", true);   // Show errors
         $("#mce-EMAIL").toggleClass("verifiedInput", false);        // Hide verified (green) input styling
         $("#mce-EMAIL").toggleClass("unverifiedInput", true);       // Show unverified (red) input styling
-        emailCheck = false;
     }
-    checkCriteria();
 });
 
 $("#mce-FNAME").on("focusout", function() {
     fNameCheck = isValidName(this);
-    checkCriteria();
+    if(!fNameCheck) {
+        $('#fname-fdbk').text("First name required");        // Feedback
+        $("#mce-FNAME ~ div").toggleClass("inputFeedback", true);   // Show errors
+    }
+    else {
+        $('#fname-fdbk').text();                                    // Clear Feedback
+        $("#mce-FNAME ~ div").toggleClass("inputFeedback", false);  // Hide errors
+    }
 });
 
 $("#mce-LNAME").on("focusout", function() {
     lNameCheck = isValidName(this);
-    checkCriteria();
+    if(!lNameCheck) {
+        $('#lname-fdbk').text("Last name required");        // Feedback
+        $("#mce-LNAME ~ div").toggleClass("inputFeedback", true);   // Show errors
+    }
+    else {
+        $('#lname-fdbk').text();                                    // Clear Feedback
+        $("#mce-LNAME ~ div").toggleClass("inputFeedback", false);  // Hide errors
+    }
+});
+
+$("#signup-form").on("submit", function() {
+    if(emailCheck && fNameCheck && lNameCheck) {
+        return true;
+    }
+    $("input").focusout();
+    return false;
 });
 
 function isValidEmailAddress(email) {
@@ -50,14 +69,5 @@ function isValidName(e) {
         $(e).toggleClass("verifiedInput", false);   // Hide verified (green) input styling
         $(e).toggleClass("unverifiedInput", true);  // Show unverified (red) input styling
         return false;
-    }
-}
-
-function checkCriteria() {
-    if(emailCheck && fNameCheck && lNameCheck) {
-        $("#mc-embedded-subscribe").prop("disabled", false);
-    }
-    else {
-        $("#mc-embedded-subscribe").prop("disabled", true);
     }
 }
