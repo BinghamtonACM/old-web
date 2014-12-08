@@ -124,7 +124,8 @@ div#main h1.title {
     margin: 30px 0 40px 0;
 }
 
-div#main.full-width.gray p {
+div#main.full-width.gray p,
+div#main.full-width.gray ul li {
     font-family: "Source Serif Pro";
     font-size: 18px;
 }
