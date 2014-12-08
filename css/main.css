@@ -142,44 +142,44 @@ div#main.full-width.gray h1.title {
 }
 
 /* ------------------
-    E-Board
+    Standard Layout
 ---------------------*/
 
-div.eboard .row:last-child {
+div.std .row:last-child {
     margin-bottom: 50px;
 }
 
-.eboard h2,
-.eboard h3 {
+.std h2,
+.std h3 {
     font-family: 'Josefin Sans';
     font-weight: 600;
 }
 
-.eboard h2 {
+.std h2 {
     font-size: 36px;
     margin-bottom: 30px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
-.eboard h3 {
+.std h3 {
     font-size: 28px;
 }
 
-.eboard h3,
-.eboard p.position,
-.eboard p.email {
+.std h3,
+.std p.position,
+.std p.email {
     text-align: center;
     margin: 0;
 }
 
-.eboard p.email .fa-envelope {
+.std p.email .fa-envelope {
     padding-right: 5px;
 }
 
-.eboard p.position {
+.std p.position {
     font-size: 24px!important;
 }
 
-.eboard p.desc {
+.std p.desc {
     margin-top: 10px;
 }
