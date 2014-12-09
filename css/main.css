@@ -173,7 +173,15 @@ div.std .row:last-child {
     margin: 0;
 }
 
-.std p.email .fa-envelope {
+.std .contact {
+    font-size: 28px!important;
+    text-align: center;
+}
+.std .contact .fa-envelope {
+    padding-right: 25px!important;
+}
+
+.std .fa-envelope {
     padding-right: 5px;
 }
 
