@@ -9,12 +9,16 @@ nav#main-nav {
 }
 
 .top-bar .toggle-topbar.menu-icon {
-    margin-top: -9px;
+    margin-top: -16px;
 }
 
 .top-bar.expanded {
     height: auto!important;
     padding: 0!important;
+}
+
+nav#main-nav ul.title-area {
+    height: 60px;
 }
 
 nav#main-nav ul.title-area li.name h1,
