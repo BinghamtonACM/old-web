@@ -1,0 +1,18 @@
+/*----------------
+    Navigation    
+------------------*/
+
+nav .brand-logo {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    padding: 3px;
+}
+
+nav ul a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+a.dropdown-button i.right {
+    margin-left: 5px;
+}
