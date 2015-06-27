@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>{{ page.title }} | {{ site.title }}</title>
-  
-  <link rel="stylesheet" href="css/materialize.min.css" type="text/css" />
-  <link rel="stylesheet" href="css/style.css" type="text/css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600|Open+Sans|Material+Icons" type="text/css">
-  <link rel="icon" href="favicon.png">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>{{ page.title }} | {{ site.title }}</title>
+
+    <link rel="stylesheet" href="css/materialize.min.css" type="text/css" media="screen,projection" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600|Open+Sans|Material+Icons" type="text/css">
+    <link rel="icon" href="favicon.png">
 </head>
 <body>
-  
-  {% include nav.html %}
 
-  <div class="container">
-    {{ content }}
-  </div>
+    {% include nav.html %}
 
-  {% include footer.html %}
+    <div class="container">
+        {{ content }}
+    </div>
 
-  <!--  Scripts-->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/materialize.min.js"></script>
-  <script src="js/mailchimp_ver.js"></script>
+    {% include footer.html %}
 
-  </body>
+    <!--  Scripts-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/mailchimp_ver.js"></script>
+    <script>
+    $(document).ready(function() {
+        $(".dropdown-button").dropdown();
+        $(".button-collapse").sideNav();
+    });
+    </script>
+
+</body>
 </html>

@@ -1,6 +1,12 @@
 /*----------------
-    Navigation    
+    Navigation
 ------------------*/
+
+/* Main */
+
+nav {
+    background-color: #333;
+}
 
 nav .brand-logo {
     font-family: 'Josefin Sans', sans-serif;
@@ -10,9 +16,46 @@ nav .brand-logo {
 
 nav ul a {
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 a.dropdown-button i.right {
     margin-left: 5px;
+}
+
+/* Mobile */
+
+ul#nav-mobile li.logo {
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+    height: 115px;
+}
+
+ul#nav-mobile li.bold,
+ul#nav-mobile li.no-padding ul li.bold {
+    line-height: 44px;
+}
+
+ul#nav-mobile li.bold a,
+ul#nav-mobile li.no-padding ul li.bold a {
+    line-height: 44px;
+    height: 44px;
+}
+
+li.bold > a {
+    font-weight: bold;
+}
+
+ul#nav-mobile ul.collapsible-accordion {
+    background-color: #fff;
+}
+
+ul#nav-mobile li:hover, ul.#nav-mobile li.active {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+ul#nav-mobile li.logo:hover {
+    background-color: transparent;
 }

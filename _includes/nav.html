@@ -1,26 +1,53 @@
-<nav class="light-blue lighten-1" role="navigation">
-  <div class="nav-wrapper container"><a id="logo-container" href="{{ site.url }}" class="brand-logo">{{ site.title }}</a>
-    <ul class="right hide-on-med-and-down">
-      <li><a class="dropdown-button" href="#!" data-activates="dropdown-about">About Us<i class="material-icons right">arrow_drop_down</i></a></li>
-      <li><a class="dropdown-button" href="#!" data-activates="dropdown-projects">Projects Division<i class="material-icons right">arrow_drop_down</i></a></li>
-      <li><a href="/events.html">Events</a></li>
-      <li><a href="/contact-us.html">Contact Us</a></li>
-    </ul>
-    <ul id="nav-mobile" class="side-nav">
-      <li><a href="#">Navbar Link</a></li>
-    </ul>
-    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-  </div>
+<nav role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="{{ site.url }}" class="brand-logo">{{ site.title }}</a>
+        <ul class="right hide-on-med-and-down">
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown-about">About Us<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown-projects">Projects Division<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="/events.html">Events</a></li>
+            <li><a href="/contact-us.html">Contact Us</a></li>
+        </ul>
+        <ul id="nav-mobile" class="side-nav">
+            <li class="logo">
+                <a id="logo-container" href="{{ site.url }}" class="brand-logo">
+                    <object id="front-page-logo" type="image/svg+xml" data="img/logo.svg"></object>
+                </a>
+            </li>
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li class="bold"><a class="collapsible-header waves-effect waves-light">About Us <i class="material-icons right">arrow_drop_down</i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="/sponsorship.html">Sponsorship</a></li>
+                                <li><a href="/eboard.html">The E-Board</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bold"><a class="collapsible-header waves-effect waves-light">Projects Division <i class="material-icons right">arrow_drop_down</i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="/projects-division.html">Projects</a></li>
+                                <li><a href="/projects-eboard.html">The E-Board</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="bold"><a href="/events.html" class="waves-effect waves-light">Events</a></li>
+            <li class="bold"><a href="/contact-us.html" class="waves-effect waves-light">Contact Us</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
 </nav>
 
-<ul id="dropdown-about" class="dropdown-content">  
-  <li><a href="/sponsorship.html">Sponsorship</a></li>
-  <li class="divider"></li>
-  <li><a href="/eboard.html">The E-Board</a></li>
+<ul id="dropdown-about" class="dropdown-content">
+    <li><a href="/sponsorship.html">Sponsorship</a></li>
+    <li class="divider"></li>
+    <li><a href="/eboard.html">The E-Board</a></li>
 </ul>
 
-<ul id="dropdown-projects" class="dropdown-content">  
-  <li><a href="/projects-division.html">Projects</a></li>
-  <li class="divider"></li>
-  <li><a href="/projects-eboard.html">The E-Board</a></li>
+<ul id="dropdown-projects" class="dropdown-content">
+    <li><a href="/projects-division.html">Projects</a></li>
+    <li class="divider"></li>
+    <li><a href="/projects-eboard.html">The E-Board</a></li>
 </ul>
