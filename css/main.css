@@ -1,0 +1,207 @@
+/* ---------------------------
+	Global: Main Navigation
+------------------------------*/
+
+nav#main-nav {
+	height: 60px;
+    padding: 0 20px;
+    z-index: 2;
+}
+
+.top-bar .toggle-topbar.menu-icon {
+    margin-top: -16px;
+}
+
+.top-bar.expanded {
+    height: auto!important;
+    padding: 0!important;
+}
+
+nav#main-nav ul.title-area {
+    height: 60px;
+}
+
+nav#main-nav ul.title-area li.name h1,
+nav#main-nav ul.right li a {
+	line-height: 60px;
+}
+
+nav#main-nav ul.title-area li.name h1 a {
+	font-size: 24px;
+    font-family: 'Josefin Sans';
+    font-weight: 600;
+}
+
+nav#main-nav ul.right li a {
+	font-size: 16px;
+    font-family: 'Open Sans';
+}
+
+nav#main-nav ul.right li a:hover {
+    background-color: #0090C1;
+}
+
+nav#main-nav ul.dropdown li a{
+    font-size: 14px;
+    padding: 0 20px 0 15px;
+    text-align: center;
+}
+
+.top-bar-section .has-dropdown > a:after {
+    margin-top: 5px;
+}
+
+.top-bar-section .has-dropdown:hover > a:after {
+    border-color: rgba(255,255,255,1) transparent transparent transparent
+}
+
+/* ---------------------------
+    Global: Side Navigation
+------------------------------*/
+
+#side-nav {
+    padding: 30px 0 0 0;
+    background-color: #aaa;
+    height: 100%;
+    width: 350px;
+}
+
+#side-nav li {
+    font-family: "Open Sans";
+    font-size: 16px;
+}
+
+#side-nav li a {
+    color: #fff;
+}
+
+#side-nav-container {
+    padding: 0;
+}
+
+/* ------------------
+    Front: Div#Main
+---------------------*/
+
+div#main.full-width {
+    width: 100%;
+    height: calc(100vh - 60px);
+    height: -o-calc(100vh - 60px); /* opera */
+    height: -webkit-calc(100vh - 60px); /* google, safari */
+    height: -moz-calc(100vh - 60px); /* firefox */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: initial;
+    position: relative;
+    z-index: 1;
+}
+
+div#main.full-width.gray div#content {
+    padding: 0 50px;
+}
+
+div#main.full-width.blue {
+    background-color: #005C7A;
+}
+
+div#main.full-width.gray {
+    background-color: #fafafa;
+}
+
+
+div#main.full-width::after {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+div#main.full-width.blue::after {
+    opacity: 0.1;
+    background: url('../img/main.png') center center;
+}
+
+div#main.full-width.gray::after {
+    opacity: 0.1;
+    background: url('../img/standard.png') center center;
+}
+
+div#main h1.title {
+    font-family: 'Josefin Sans';
+    font-weight: 600;
+    text-align: center;
+    margin: 30px 0 40px 0;
+}
+
+div#main.full-width.gray p,
+div#main.full-width.gray ul li {
+    font-family: "Source Serif Pro";
+    font-size: 18px;
+}
+
+div#main.full-width.blue h1.title{
+    color: #fff;
+    border-bottom: 4px ridge #fff;
+    font-size: 72px;
+}
+
+div#main.full-width.gray h1.title {
+    color: #000;
+    text-decoration: underline;
+    font-size: 48px;
+}
+
+/* ------------------
+    Standard Layout
+---------------------*/
+
+div.std .row:last-child {
+    margin-bottom: 50px;
+}
+
+.std h2,
+.std h3 {
+    font-family: 'Josefin Sans';
+    font-weight: 600;
+}
+
+.std h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.std h3 {
+    font-size: 28px;
+}
+
+.std h3,
+.std p.position,
+.std p.email {
+    text-align: center;
+    margin: 0;
+}
+
+.std .contact {
+    font-size: 28px!important;
+    text-align: center;
+}
+.std .contact .fa-envelope {
+    padding-right: 25px!important;
+}
+
+.std .fa-envelope {
+    padding-right: 5px;
+}
+
+.std p.position {
+    font-size: 24px!important;
+}
+
+.std p.desc {
+    margin-top: 10px;
+}

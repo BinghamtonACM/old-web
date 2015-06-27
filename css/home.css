@@ -1,0 +1,139 @@
+/* ------------------------
+    Front: ACM Components
+---------------------------*/
+
+ul#acm-components {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-top: 4px ridge #fff;
+    border-bottom: 4px ridge #fff;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+ul#acm-components li {
+    line-height: 0;
+    display: inline-block;
+    padding: 20px 20px 10px 20px;
+    width: calc((100vw / 3) - 50px);
+    width: -o-calc((100vw / 3) - 50px); /* opera */
+    width: -webkit-calc((100vw / 3) - 50px); /* google, safari */
+    width: -moz-calc((100vw / 3) - 50px); /* firefox */
+}
+
+ul#acm-components li:first-child {
+    margin-left: 75px;
+}
+
+ul#acm-components li h2 {
+    color: #fff;
+    font-family: 'Josefin Sans';
+    font-weight: 600;
+    border-bottom: 4px ridge #fff;
+}
+
+ul#acm-components li p {
+    color: #fff;
+    font-family: 'Open Sans';
+    text-align: left;
+    font-size: 20px;
+    color: #fff;
+}
+
+/* -------------------------------
+    Front: MailChimp Signup Form
+----------------------------------*/
+
+form#signup-form {
+    text-align: center;
+    margin-top: 20px;
+    padding: 0;
+}
+
+form#signup-form h2 {
+    font-family: 'Josefin Sans';
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    margin: -25px 10px 0 0;
+}
+
+form#signup-form fieldset {
+    display: inline-block;
+    border: none;
+    padding: 0;
+    vertical-align: middle;
+}
+
+form#signup-form div {
+    font-family: 'Open Sans';
+    background-color: rgba(0, 0, 0, 0.5);
+    width: inherit;
+    height: 30px;
+    padding: 3px 0;
+    font-size: 16px;
+    font-style: italic;
+    color: #fff;
+    position: relative;
+    z-index: -1;
+    top: -30px;
+}
+
+.inputFeedback {
+    top: 0!important;
+    -webkit-transition: top 0.30s ease-in-out;
+    -moz-transition: top 0.30s ease-in-out;
+    -ms-transition: top 0.30s ease-in-out;
+    -o-transition: top 0.30s ease-in-out;
+}
+
+form#signup-form input {
+    font-family: 'Open Sans';
+    width: 200px;
+    display: inline-block;
+    font-size: 18px;
+    text-align: center;
+    padding-left: 5px;
+    margin: 0;
+}
+
+form#signup-form input[type="email"] {
+    width: 300px;
+    padding: 0;
+}
+
+.verifiedInput {
+    background-color: #CCFFCC!important;
+    border: 1px solid #1DA237!important;
+    box-shadow: 0 0 10px #1DA237!important;
+}
+
+.unverifiedInput {
+    background-color: #ffcccc!important;
+    border: 1px solid #a2371d!important;
+    box-shadow: 0 0 10px #a2371d!important;
+}
+
+.verifiedEmail,
+.unverifiedEmail {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+}
+
+form#signup-form input[type="submit"] {
+    width: 100px;
+    height: 37px;
+    padding: 0;
+    vertical-align: middle;
+    margin: -30px 0 0 0;
+    background-color: #098227;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 0 15px rgba(204, 204, 204, 0.5);
+}
+
+form#signup-form input[type="submit"]:hover {
+    background-color: #1e6d32;
+}

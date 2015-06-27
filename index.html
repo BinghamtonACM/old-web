@@ -1,13 +1,27 @@
 ---
-layout: default
+layout: home
 title: Home
 ---
 
-<div class="row ">
-    <div class="large-12 columns">
-        <div class="panel">
-            <h1>Binghamton ACM Chapter</h1>
-            <h3>Sponsored by Bloomberg</h3>
-        </div>
-    </div>
+<div id="main" class="full-width blue">
+  <div class="row">
+	<div class="large-12 columns">
+	  <h1 class="title">Binghamton ACM</h1>
+	</div>
+  </div>
+  <ul id="acm-components" class="large-block-grid-3">
+	<li class="header1">
+		<h2>Who We Are</h2>
+		<p>We are Binghamton University's student chapter of the Association for Computing Machinery, an international society for Computer Scientists.</p>
+	</li>
+	<li class="header2">
+		<h2>What We Do</h2>
+		<p>We host tech talks, programming competitions, and other fun events!</p>
+	</li>
+	<li class="header3">
+		<h2>Get Involved</h2>
+		<p>Have a question? Need information? Want to say hello? Whatever it is, you can reach us <a href="/contact-us">here!</a></p>
+	</li>
+  </ul>
+  {% include mailchimp.html %}
 </div>
