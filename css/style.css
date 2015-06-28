@@ -3,7 +3,22 @@
 ------------------*/
 
 body {
-    background-color: #f5f5f5;
+    background: #01579b; /* light-blue darken-4, previously #f5f5f5 */
+    position: relative;
+    z-index: 1;
+}
+
+body:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('../img/svg/circuit.svg'), url('../img/png/circuit.png');
+    background-repeat: repeat;
+    opacity: 0.2;
 }
 
 p a {
@@ -44,11 +59,30 @@ h1.section-title {
     Front Page
 ------------------*/
 
+#home .card {
+    margin-top: 1rem;   
+}
+
+#front-page-logo {
+    padding: 0;
+}
+
+#front-page-logo object,
+#front-page-logo object img {
+    width: 85%;
+    padding: 7px 5px 0px 5px;
+    max-width: 650px;
+}
+
 /*----------------
     Navigation
 ------------------*/
 
 /* Main */
+
+nav {
+    margin-bottom: 15px;
+}
 
 nav .brand-logo {
     font-family: 'Open Sans', sans-serif;
@@ -98,11 +132,6 @@ ul#nav-mobile li:hover, ul.#nav-mobile li.active {
 
 ul#nav-mobile li.logo:hover {
     background-color: transparent;
-}
-
-#front-page-logo img {
-    width: 240px;
-    padding: 5px;
 }
 
 /*----------------
