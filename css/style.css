@@ -1,12 +1,16 @@
 /*----------------
+    General
+------------------*/
+
+body {
+    background-color: #f5f5f5;
+}
+
+/*----------------
     Navigation
 ------------------*/
 
 /* Main */
-
-nav {
-    background-color: #333;
-}
 
 nav .brand-logo {
     font-family: 'Josefin Sans', sans-serif;
@@ -58,4 +62,9 @@ ul#nav-mobile li:hover, ul.#nav-mobile li.active {
 
 ul#nav-mobile li.logo:hover {
     background-color: transparent;
+}
+
+#front-page-logo img {
+    width: 240px;
+    padding: 5px;
 }
