@@ -69,6 +69,18 @@ a.svg:after {
     left: 0;
 }
 
+/* Sticky Footer */
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
 /*----------------
     Front Page
 ------------------*/
