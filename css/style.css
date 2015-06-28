@@ -55,6 +55,20 @@ h1.section-title {
     margin-bottom: 20px;
 }
 
+a.svg {
+    position: relative;
+    display: inline-block;
+}
+
+a.svg:after {
+    content: "";
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0;
+}
+
 /*----------------
     Front Page
 ------------------*/
@@ -144,4 +158,10 @@ footer a {
 
 footer.page-footer {
     padding: 5px;
+}
+
+div#more-links a#facebook-icon object,
+div#more-links a#facebook-icon object img {
+    width: 32px;
+    margin: 9px;
 }
