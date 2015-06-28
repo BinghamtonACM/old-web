@@ -1,0 +1,167 @@
+/*----------------
+    General
+------------------*/
+
+body {
+    background: #01579b; /* light-blue darken-4, previously #f5f5f5 */
+    position: relative;
+    z-index: 1;
+}
+
+body:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('../img/svg/circuit.svg'), url('../img/png/circuit.png');
+    background-repeat: repeat;
+    opacity: 0.2;
+}
+
+p a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    border-bottom: 1px dotted #0277bd;
+    color: #0277bd; /* light-blue darken-3 */
+}
+
+p a:hover {
+    color: #039be5; /* light-blue darken-1 */
+}
+
+h1.title {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h1.section-title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+.card p {
+    font-family: 'Roboto', sans-serif;    
+    font-size: 16px;
+}
+
+.card hr {
+    margin-bottom: 20px;
+}
+
+a.svg {
+    position: relative;
+    display: inline-block;
+}
+
+a.svg:after {
+    content: "";
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0;
+}
+
+/*----------------
+    Front Page
+------------------*/
+
+#home .card {
+    margin-top: 1rem;   
+}
+
+#front-page-logo {
+    padding: 0;
+}
+
+#front-page-logo object,
+#front-page-logo object img {
+    width: 85%;
+    padding: 7px 5px 0px 5px;
+    max-width: 650px;
+}
+
+/*----------------
+    Navigation
+------------------*/
+
+/* Main */
+
+nav {
+    margin-bottom: 15px;
+}
+
+nav .brand-logo {
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav ul a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+a.dropdown-button i.right {
+    margin-left: 5px;
+}
+
+/* Mobile */
+
+ul#nav-mobile li.logo {
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+    height: 115px;
+}
+
+ul#nav-mobile li.bold,
+ul#nav-mobile li.no-padding ul li.bold {
+    line-height: 44px;
+}
+
+ul#nav-mobile li.bold a,
+ul#nav-mobile li.no-padding ul li.bold a {
+    line-height: 44px;
+    height: 44px;
+}
+
+li.bold > a {
+    font-weight: bold;
+}
+
+ul#nav-mobile ul.collapsible-accordion {
+    background-color: #fff;
+}
+
+ul#nav-mobile li:hover, ul.#nav-mobile li.active {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+ul#nav-mobile li.logo:hover {
+    background-color: transparent;
+}
+
+/*----------------
+    Footer
+------------------*/
+
+footer a {
+    font-weight: bold;
+}
+
+footer.page-footer {
+    padding: 5px;
+}
+
+div#more-links a#facebook-icon object,
+div#more-links a#facebook-icon object img {
+    width: 32px;
+    margin: 9px;
+}
