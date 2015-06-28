@@ -1,4 +1,4 @@
 Binghamton ACM
 ===============
 
-This is the development branch for the forked official Binghamton ACM website.
+This is the development fork for the Binghamton ACM website.
