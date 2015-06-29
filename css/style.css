@@ -123,6 +123,11 @@ a.dropdown-button i.right {
     margin-left: 5px;
 }
 
+#dropdown-about,
+#dropdown-projects {
+    top: 64px!important;
+}
+
 /* Mobile */
 
 ul#nav-mobile li.logo {
