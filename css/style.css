@@ -1,9 +1,9 @@
-/*----------------
-    General
-------------------*/
+/**
+ * Global
+ */
 
 body {
-    background: #01579b; /* light-blue darken-4, previously #f5f5f5 */
+    background: #01579b; /* light-blue darken-4 */
     position: relative;
     z-index: 1;
 }
@@ -21,6 +21,8 @@ body:before {
     opacity: 0.2;
 }
 
+/* Paragraph Links */
+
 p a {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
@@ -32,13 +34,9 @@ p a:hover {
     color: #039be5; /* light-blue darken-1 */
 }
 
-h1.title {
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    margin-bottom: 15px;
-}
+/* Headings */
 
-h1.section-title {
+.section-title {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 3rem;
@@ -46,7 +44,9 @@ h1.section-title {
     text-align: center;
 }
 
-.card p {
+/* Cards */
+
+p {
     font-family: 'Roboto', sans-serif;    
     font-size: 16px;
 }
@@ -54,6 +54,8 @@ h1.section-title {
 .card hr {
     margin-bottom: 20px;
 }
+
+/* Svg's */
 
 a.svg {
     position: relative;
@@ -81,9 +83,9 @@ main {
     flex: 1 0 auto;
 }
 
-/*----------------
-    Front Page
-------------------*/
+/**
+ * Front Page
+ */
 
 #home .card {
     margin-top: 1rem;   
@@ -96,13 +98,13 @@ main {
 #front-page-logo object,
 #front-page-logo object img {
     width: 85%;
-    padding: 7px 5px 0px 5px;
+    padding: 7px 5px 0 5px;
     max-width: 650px;
 }
 
-/*----------------
-    Navigation
-------------------*/
+/**
+ * Navigation
+ */
 
 /* Main */
 
@@ -114,12 +116,12 @@ nav .brand-logo {
     font-family: 'Open Sans', sans-serif;
 }
 
-nav ul a {
+#nav-main a {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
 }
 
-a.dropdown-button i.right {
+.dropdown-button .right {
     margin-left: 5px;
 }
 
@@ -130,7 +132,7 @@ a.dropdown-button i.right {
 
 /* Mobile */
 
-ul#nav-mobile li.logo {
+#nav-mobile .logo {
     text-align: center;
     margin-top: 8px;
     margin-bottom: 8px;
@@ -138,47 +140,47 @@ ul#nav-mobile li.logo {
     height: 115px;
 }
 
-ul#nav-mobile li.bold,
-ul#nav-mobile li.no-padding ul li.bold {
+.bold > a {
+    font-weight: bold;
+}
+
+#nav-mobile .bold {
     line-height: 44px;
 }
 
-ul#nav-mobile li.bold a,
-ul#nav-mobile li.no-padding ul li.bold a {
+#nav-mobile .bold a {
     line-height: 44px;
     height: 44px;
 }
 
-li.bold > a {
-    font-weight: bold;
-}
-
-ul#nav-mobile ul.collapsible-accordion {
+#nav-mobile .collapsible-accordion {
     background-color: #fff;
 }
 
-ul#nav-mobile li:hover, ul.#nav-mobile li.active {
+#nav-mobile li.active,
+#nav-mobile li:hover {
     background-color: rgba(0, 0, 0, 0.05);
 }
 
-ul#nav-mobile li.logo:hover {
+#nav-mobile .logo:hover {
     background-color: transparent;
 }
 
-/*----------------
-    Footer
-------------------*/
+/**
+ * Footer
+ */
 
-footer a {
+footer.page-footer {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+#copyright-author {
     font-weight: bold;
 }
 
-footer.page-footer {
-    padding: 5px;
-}
-
-div#more-links a#facebook-icon object,
-div#more-links a#facebook-icon object img {
+#more-links object,
+#more-links object img {
     width: 32px;
     margin: 9px;
 }
