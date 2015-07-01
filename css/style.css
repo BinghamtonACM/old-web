@@ -87,16 +87,16 @@ main {
  * Front Page
  */
 
-#home .card {
+#logo-card {
     margin-top: 1rem;   
 }
 
-#front-page-logo {
+#logo-card .card-content {
     padding: 0;
 }
 
-#front-page-logo object,
-#front-page-logo object img {
+#logo-card object,
+#logo-card object img {
     width: 85%;
     padding: 7px 5px 0 5px;
     max-width: 650px;
