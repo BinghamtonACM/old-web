@@ -2,13 +2,17 @@
  * Global
  */
 
-body {
+#front {
     background: #01579b; /* light-blue darken-4 */
     position: relative;
     z-index: 1;
 }
 
-body:before {
+#standard {
+    background: #eee;
+}
+
+#front:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -45,6 +49,10 @@ p a:hover {
 }
 
 /* Cards */
+
+.card {
+    margin-top: 1rem;
+}
 
 p {
     font-family: 'Roboto', sans-serif;    
