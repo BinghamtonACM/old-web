@@ -1,14 +1,14 @@
 <nav class="grey darken-4" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo">{{ site.title }}</a>
+    <div class="nav-wrapper container"><a id="logo-container" href="{{ site.baseurl }}" class="brand-logo">{{ site.title }}</a>
         <ul id="nav-main" class="right hide-on-med-and-down">
             <li><a class="dropdown-button" href="#!" data-activates="dropdown-about">About Us<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a class="dropdown-button" href="#!" data-activates="dropdown-projects">Projects Division<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a href="/events.html">Events</a></li>
-            <li><a href="/contact-us.html">Contact Us</a></li>
+            <li><a href="{{ site.baseurl }}/events.html">Events</a></li>
+            <li><a href="{{ site.baseurl }}/contact-us.html">Contact Us</a></li>
         </ul>
         <ul id="nav-mobile" class="side-nav">
             <li class="logo">
-                <a id="logo-container" href="{{ site.url }}" class="brand-logo svg">
+                <a id="logo-container" href="{{ site.baseurl }}" class="brand-logo svg">
                     <object id="front-page-logo" type="image/svg+xml" data="img/svg/nav-logo.svg"><img src="img/png/nav-logo.png" /></object>
                 </a>
             </li>
@@ -17,38 +17,38 @@
                     <li class="bold"><a class="collapsible-header waves-effect waves-light">About Us <i class="material-icons right">arrow_drop_down</i></a>
                         <div class="collapsible-body">
                             <ul>
-                                <li><a href="/sponsorship.html">Sponsorship</a></li>
-                                <li><a href="/eboard.html">The E-Board</a></li>
+                                <li><a href="{{ site.baseurl }}/sponsorship.html">Sponsorship</a></li>
+                                <li><a href="{{ site.baseurl }}/eboard.html">The E-Board</a></li>
                             </ul>
                         </div>
                     </li>
                     <li class="bold"><a class="collapsible-header waves-effect waves-light">Projects Division <i class="material-icons right">arrow_drop_down</i></a>
                         <div class="collapsible-body">
                             <ul>
-                                <li><a href="/projects-division.html">Projects</a></li>
-                                <li><a href="/projects-eboard.html">The E-Board</a></li>
+                                <li><a href="{{ site.baseurl }}/projects-division.html">Projects</a></li>
+                                <li><a href="{{ site.baseurl }}/projects-eboard.html">The E-Board</a></li>
                             </ul>
                         </div>
                     </li>
                 </ul>
             </li>
 
-            <li class="bold"><a href="/events.html" class="waves-effect waves-light">Events</a></li>
-            <li class="bold"><a href="/contact-us.html" class="waves-effect waves-light">Contact Us</a></li>
+            <li class="bold"><a href="{{ site.baseurl }}/events.html" class="waves-effect waves-light">Events</a></li>
+            <li class="bold"><a href="{{ site.baseurl }}/contact-us.html" class="waves-effect waves-light">Contact Us</a></li>
         </ul>
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
 </nav>
 
 <ul id="dropdown-about" class="dropdown-content">
-    <li><a href="/sponsorship.html">Sponsorship</a></li>
+    <li><a href="{{ site.baseurl }}/sponsorship.html">Sponsorship</a></li>
     <li class="divider"></li>
-    <li><a href="/eboard.html">The E-Board</a></li>
+    <li><a href="{{ site.baseurl }}/eboard.html">The E-Board</a></li>
     <li class="divider"></li>
 </ul>
 
 <ul id="dropdown-projects" class="dropdown-content">
-    <li><a href="/projects-division.html">Projects</a></li>
+    <li><a href="{{ site.baseurl }}/projects-division.html">Projects</a></li>
     <li class="divider"></li>
-    <li><a href="/projects-eboard.html">The E-Board</a></li>
+    <li><a href="{{ site.baseurl }}/projects-eboard.html">The E-Board</a></li>
 </ul>
