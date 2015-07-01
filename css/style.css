@@ -25,6 +25,16 @@
     opacity: 0.2;
 }
 
+/* Show Bullets */
+
+.show-bullets {
+    padding-left: 40px;
+}
+
+.show-bullets li {
+    list-style-type: circle;
+}
+
 /* Paragraph Links */
 
 p a {
@@ -45,7 +55,6 @@ p a:hover {
     font-weight: 300;
     font-size: 3rem;
     margin: 0.5rem 0;
-    text-align: center;
 }
 
 /* Cards */
