@@ -2,7 +2,8 @@
  * Global
  */
 
-#front {
+#front,
+#standard {
     background: #01579b; /* light-blue darken-4 */
     position: relative;
     z-index: 1;
@@ -12,7 +13,8 @@
     background: #eee;
 }
 
-#front:before {
+#front:before,
+#standard:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -23,6 +25,10 @@
     background-image: url('../img/svg/circuit.svg'), url('../img/png/circuit.png');
     background-repeat: repeat;
     opacity: 0.2;
+}
+
+#standard:before {
+    opacity: 0.1;
 }
 
 /* Show Bullets */
@@ -61,11 +67,12 @@ p a:hover {
 
 .card {
     margin-top: 1rem;
-}
-
-p {
     font-family: 'Roboto', sans-serif;    
     font-size: 16px;
+}
+
+.card p {
+    margin: 16px 0 8px 0!important;
 }
 
 .card hr {
