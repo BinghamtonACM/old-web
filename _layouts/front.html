@@ -27,7 +27,10 @@
     <script src="js/mailchimp_ver.js"></script>
     <script>
     $(document).ready(function() {
-        $(".dropdown-button").dropdown();
+        $(".dropdown-button").dropdown({
+            hover: true
+            belowOrigin: true
+        });
         $(".button-collapse").sideNav();
     });
     </script>

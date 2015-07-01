@@ -133,11 +133,6 @@ nav .brand-logo {
     margin-left: 5px;
 }
 
-#dropdown-about,
-#dropdown-projects {
-    top: 64px!important;
-}
-
 /* Mobile */
 
 #nav-mobile .logo {
