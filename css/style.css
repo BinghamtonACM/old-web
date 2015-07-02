@@ -66,7 +66,7 @@ p a:hover {
 /* Cards */
 
 .card {
-    margin-top: 1rem;
+    margin: 1rem 0;
     font-family: 'Roboto', sans-serif;    
     font-size: 16px;
 }
@@ -77,6 +77,15 @@ p a:hover {
 
 .card hr {
     margin-bottom: 20px;
+}
+
+.card .border {
+    border-bottom: 1px solid #aaa;
+}
+
+.card .contact-info {
+    display: inline;
+    line-height: 25px;
 }
 
 /* Svg's */
