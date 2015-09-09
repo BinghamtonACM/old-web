@@ -2,7 +2,7 @@ highlighter: pygments
 timezone: America/New_York
 encoding: utf-8
 title: Binghamton ACM
-baseurl: "binghamtonacm.com"
+baseurl: ""
 
 facebook-url: "https://www.facebook.com/BinghamtonACM"
 
