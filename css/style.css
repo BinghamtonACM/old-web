@@ -71,6 +71,10 @@ p a:hover {
     font-size: 16px;
 }
 
+.card.eboard .card-content {
+    height: 200px;
+}
+
 .card .card-content .card-title {
     line-height: 36px;
 }
