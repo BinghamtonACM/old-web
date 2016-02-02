@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>{{ page.title }} | {{ site.title }}</title>
+
+    <link rel="stylesheet" href="css/materialize.min.css" type="text/css" media="screen,projection" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/timeline.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Material+Icons" type="text/css">
+    <link rel="icon" href="favicon.png">
+</head>
+<body id="standard">
+    {% include nav.html %}
+
+    <main>
+        <div class="container">
+            {{ content }}
+        </div>
+    </main>
+
+    {% include footer.html %}
+
+    <!--  Scripts-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/timeline.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $(".dropdown-button").dropdown({
+            hover: true,
+            belowOrigin: true
+        });
+        $(".button-collapse").sideNav();
+    });
+    </script>
+
+</body>
+</html>
