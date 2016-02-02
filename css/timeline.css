@@ -16,7 +16,7 @@ html * {
 
 body {
   font-size: 100%;
-  font-family: "Droid Serif", serif;
+  font-family: "Open Sans", sans-serif;
   color: #7f8c97;
   background-color: #e9f0f5;
 }
@@ -91,9 +91,9 @@ header h1 {
 #timeline::before {
   content: '';
   position: absolute;
-  top: 0px;
+  top: 64 px;
   left: 18px;
-  height: 100%;
+  height: calc(100% - 180px);
   width: 4px;
   background: #fff;
 }
@@ -154,14 +154,8 @@ header h1 {
   margin-left: -12px;
   margin-top: -12px;
 }
-.timeline-img.picture {
-  background: #75ce66;
-}
-.timeline-img.movie {
-  background: #c03b44;
-}
-.timeline-img.location {
-  background: #f0ca45;
+.timeline-img.event {
+  background: #045A85;
 }
 @media only screen and (min-width: 1170px) {
   .timeline-img {
