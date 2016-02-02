@@ -1,4 +1,4 @@
-highlighter: pygments
+highlighter: rouge, 
 timezone: America/New_York
 encoding: utf-8
 title: Binghamton ACM
