@@ -488,8 +488,6 @@ header h1 {
 /* Fix issues with lists */
 ul.browser-default {
   padding-left: 30px;
-  margin-top: 10px;
-  margin-bottom: 15px;
 }
 
 ul.browser-default li {
